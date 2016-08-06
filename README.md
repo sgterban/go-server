@@ -1,5 +1,5 @@
 # go-server
-Basic golang server for JSON, HTML Forms, Templates, CSV, and XLS 
+Basic golang server for HTML, JSON, XML, CSV, and XLS 
 
 To use:
 ```
@@ -8,16 +8,17 @@ go install github.com/sgterban/go-server
 $GOPATH/go-server
 ```
 
-Server will run on localhost:7777 at the following endpoints:
+Server will run on **localhost:7777** at the following endpoints:
 
-/ = HTML Template Rendering
-/json = JSON GET Response
-/xml = XML GET Response
-/csv = CSV File Response *(Required Form value "invoice" e.g. ?invoice=1)
-/xls = XLS File Response *(Required Form value "invoice" e.g. ?invoice=1)
+**/** = **HTML** Template Rendering<br/>
+/**json** = **JSON** GET Response<br/>
+/**xml** = **XML** GET Response<br/>
+/**csv** = **CSV** File Response (**Required** Form value **invoice** e.g. **?invoice=1**)<br/>
+/**xls** = **XLS** File Response (**Required** Form value **invoice** e.g. **?invoice=1**)<br/>
 
-HTML Template
-http://localhost:7777/
+
+<h2>HTML Template</h2>
+*http://localhost:7777/*
 ```html
 <html>
   <head>
@@ -29,28 +30,28 @@ http://localhost:7777/
 </html>
 ```
 
-JSON Response
-http://localhost:7777/json
+<h2>JSON Response</h2>
+*http://localhost:7777/json*
 ```js
 {"Msg":"hello"}
 ```
 
-XML Response
-http://localhost:7777/xml
+<h2>XML Response</h2>
+*http://localhost:7777/xml*
 ```xml
 <Reponse>
   <Msg>hello</Msg>
 </Response>
 ```
 
-CSV File Download
-http://localhost:7777/csv
+<h2>CSV File Download</h2>
+*http://localhost:7777/csv*
 ```
 Description,Price,Quantity
 ```
 
-XLS File Download
-http://localhost:7777/xls
+<h2>XLS File Download</h2>
+*http://localhost:7777/xls*
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <?mso-application prodig="Excel.Sheet"?>
